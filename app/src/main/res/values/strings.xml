@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">考考你</string>
+    <string name="action_settings"></string>
+    <string name="title_activity_end"></string>
+    <string name="title_activity_start"></string>
+
+    <string-array name="menu">
+        <item>選單</item>
+        <item>下一題</item>
+        <item>主選單</item>
+        <item>離開</item>
+    </string-array>
+
+    <string-array name="quiz1">
+        <item>請問這是什麼體操項目？</item>
+        <item>從天花板垂下來</item>
+        <item>吊環</item>
+        <item>吊環</item>
+        <item>鞍馬</item>
+        <item>跳繩</item>
+        <item>撐竿</item>
+    </string-array>
+
+
+    <string-array name="quiz2">
+        <item>請問這是什麼建築</item>
+        <item>在台灣</item>
+        <item>台北101</item>
+        <item>東京鐵塔</item>
+        <item>埃及大金字塔</item>
+        <item>台北101</item>
+        <item>雙子星大樓</item>
+    </string-array>
+
+    <string-array name="quiz3">
+        <item>請問這是什麼人物？</item>
+        <item>死神主角</item>
+        <item>黑崎一護</item>
+        <item>旋渦鳴人</item>
+        <item>超級瑪莉</item>
+        <item>黑崎一護</item>
+        <item>豆豆先生</item>
+    </string-array>
+
+
+    <string-array name="quiz4">
+        <item>圖片中自然現象稱為甚麼?</item>
+        <item>常發生在高緯地區</item>
+        <item>極光</item>
+        <item>龍捲風</item>
+        <item>沙塵暴</item>
+        <item>海嘯</item>
+        <item>極光</item>
+    </string-array>
+
+
+    <string-array name="quiz5">
+        <item>圖片中場景位於哪座島?</item>
+        <item>是南太平洋中的一個島嶼</item>
+        <item>復活島</item>
+        <item>復活島</item>
+        <item>龜山島</item>
+        <item>冰島</item>
+        <item>海南島</item>
+    </string-array>
+
+
+    <string-array name="quiz6">
+        <item>請問圖片中是哪種動物?</item>
+        <item>非洲動物</item>
+        <item>花豹</item>
+        <item>石虎</item>
+        <item>美國短毛貓</item>
+        <item>獅子</item>
+        <item>花豹</item>
+    </string-array>
+
+
+
+    <string-array name="quiz7">
+        <item>請問金庸筆下的鹿鼎記關於的朝代?</item>
+        <item>反清復明</item>
+        <item>明末清初</item>
+        <item>明代</item>
+        <item>清代</item>
+        <item>中華民國</item>
+        <item>明末清初</item>
+    </string-array>
+
+
+
+    <string-array name="quiz8">
+        <item>請問非洲獵豹跑100公尺需要幾秒?</item>
+        <item>三又五分之一</item>
+        <item>3.2秒</item>
+        <item>3.2秒</item>
+        <item>5秒</item>
+        <item>4秒</item>
+        <item>2秒</item>
+    </string-array>
+
+</resources>
