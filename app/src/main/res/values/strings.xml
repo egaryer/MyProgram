@@ -8,7 +8,6 @@
 
     <string-array name="menu">
         <item>選單</item>
-        <item>下一題</item>
         <item>主選單</item>
         <item>離開</item>
     </string-array>
