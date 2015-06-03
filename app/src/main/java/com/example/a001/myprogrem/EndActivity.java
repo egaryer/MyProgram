@@ -1,6 +1,8 @@
 package com.example.a001.myprogrem;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +14,8 @@ import android.widget.TextView;
 public class EndActivity extends ActionBarActivity {
     TextView score;
 
+    int point;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,18 +24,31 @@ public class EndActivity extends ActionBarActivity {
         findView();
 
         Intent it = getIntent();
-        int strScore = it.getIntExtra("Score", 0);
-        score.setText(String.valueOf(strScore));
+        point = it.getIntExtra("Score", 0);
+        score.setText(String.valueOf(point));
+
+        saveScore(point);
     }
 
     public void findView(){
         score = (TextView) findViewById(R.id.tv_endscore);
     }
 
+    //開啟MainActivity
     public void playAgain(View v){
         Intent back = new Intent(this, MainActivity.class);
         startActivity(back);
         finish();
+    }
+
+    //存分數
+    public void saveScore(int data){
+        SharedPreferences preferences = getSharedPreferences("Pref", Context.MODE_PRIVATE);
+        int pref_score = preferences.getInt("pref_score", 0);
+
+        if (data>pref_score){
+            preferences.edit().putInt("pref_score", data).commit();
+        }
     }
 
     @Override

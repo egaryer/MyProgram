@@ -1,51 +1,43 @@
 package com.example.a001.myprogrem;
 
-import android.content.Intent;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 
-public class StartActivity extends ActionBarActivity {
-    Button btn_play,btn_exit;
+public class RankActivity extends ActionBarActivity {
+
+    TextView score;
+
+    SharedPreferences preferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
-        findView();
-    }
-    public void findView(){
-        btn_play = (Button) findViewById(R.id.btn_play);
-        btn_exit = (Button) findViewById(R.id.btn_exit);
+        setContentView(R.layout.activity_rank);
 
-    }
+        score = (TextView) findViewById(R.id.tv_score);
 
-    //開啟MainActivity
-    public void btnPlay(View v){
-        Intent main = new Intent(this, MainActivity.class);
-        startActivity(main);
-        finish();
+        preferences = getSharedPreferences("Pref", Context.MODE_PRIVATE);
+        int pref_score = preferences.getInt("pref_score", 0);
+
+        score.setText(String.valueOf(pref_score));
     }
 
-    //開啟RankActivity
-    public void btnRank(View v){
-        Intent rank = new Intent(this, RankActivity.class);
-        startActivity(rank);
+    //重置Preferences
+    public void resetPref(View v){
+        preferences.edit().remove("pref_score").commit();
     }
-
-    //離開
-    public void btnExit(View v){
-        finish();
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_start, menu);
+        getMenuInflater().inflate(R.menu.menu_rank, menu);
         return true;
     }
 

@@ -15,20 +15,34 @@
         android:background="@drawable/menu_btn"
         android:onClick="btnPlay"
         android:textColor="#000000"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="50dp"
         android:layout_above="@+id/btn_exit"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/btn_exit"
+        android:layout_alignStart="@+id/btn_exit" />
 
     <Button
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:text="離開"
+        android:text="離開囉"
         android:id="@+id/btn_exit"
         android:background="@drawable/menu_btn"
         android:onClick="btnExit"
         android:textColor="#000000"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp" />
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="最高分"
+        android:id="@+id/btn_highscore"
+        android:background="@drawable/menu_btn"
+        android:textColor="#000000"
+        android:layout_above="@+id/btn_exit"
+        android:layout_alignLeft="@+id/btn_play"
+        android:layout_alignStart="@+id/btn_play"
+        android:layout_marginBottom="5dp"
+        android:onClick="btnRank" />
 
 </RelativeLayout>

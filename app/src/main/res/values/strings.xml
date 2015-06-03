@@ -99,5 +99,8 @@
         <item>4秒</item>
         <item>2秒</item>
     </string-array>
+    <string name="title_activity_rank">RankActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
