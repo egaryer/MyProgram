@@ -62,8 +62,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                     point = 0;
                     quizNumber = 0;
                     startActivity(end);
-                    bitmap.recycle();
-                    System.gc();
+                    releaseMemory();
                     finish();
                 } else {
                     setQuiz();
@@ -93,6 +92,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         win = soundPool.load(this, R.raw.win_sound, 1);
         fail = soundPool.load(this, R.raw.fail_sound, 1);
         hint = soundPool.load(this, R.raw.hint_sound, 1);
+    }
+
+    //釋放記憶體
+    public void releaseMemory(){
+        soundPool.release();
+        bitmap.recycle();
+        System.gc();
     }
 
     //設定題目
