@@ -31,9 +31,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     SoundPool soundPool;
     String[] question;
 
-    int[] quizbank = {R.array.quiz1, R.array.quiz2 ,R.array.quiz3,R.array.quiz4,R.array.quiz5,R.array.quiz6,R.array.quiz7,R.array.quiz8};
+    int[] quizbank = {R.array.quiz1, R.array.quiz2 ,R.array.quiz3,R.array.quiz4,R.array.quiz5,R.array.quiz6,R.array.quiz7,R.array.quiz8,R.array.quiz9,R.array.quiz10};
 
-    int[] imgBank = {R.drawable.quiz1, R.drawable.quiz2, R.drawable.quiz3,R.drawable.quiz4,R.drawable.quiz5,R.drawable.quiz6,R.drawable.quiz7,R.drawable.quiz8};
+    int[] imgBank = {R.drawable.quiz1, R.drawable.quiz2, R.drawable.quiz3,R.drawable.quiz4,R.drawable.quiz5,R.drawable.quiz6,R.drawable.quiz7,R.drawable.quiz8,R.drawable.quiz9,R.drawable.quiz10};
 
     int win, fail, hint;//音效碼
 
