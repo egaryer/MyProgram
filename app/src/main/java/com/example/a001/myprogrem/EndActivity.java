@@ -36,8 +36,12 @@ public class EndActivity extends ActionBarActivity {
 
     //開啟MainActivity
     public void playAgain(View v){
-        Intent back = new Intent(this, MainActivity.class);
+        Intent back = new Intent(this, StartActivity.class);
         startActivity(back);
+        finish();
+    }
+
+    public void goExit(View v){
         finish();
     }
 

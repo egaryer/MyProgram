@@ -27,6 +27,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     Button[] btn;
     Spinner menu;
 
+    Toast toast_hint;
     Bitmap bitmap;
     SoundPool soundPool;
     String[] question;
@@ -103,7 +104,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     //設定題目
     public void setQuiz(){
-        score.setText(String.valueOf(point));
         question = getResources().getStringArray(quizbank[quizNumber]);
         quiz.setText(question[0]);
 
@@ -120,6 +120,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             btn[i].setText(question[i+3]);
             btn[i].setOnClickListener(this);
         }
+
+        //設定提示可按
+        btn_hint.setClickable(true);
     }
 
     //答案按鈕
@@ -129,6 +132,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         for(int i=0;i<4;i++){
             btn[i].setClickable(false);
         }
+
+        //提示按鈕不可按
+        btn_hint.setClickable(false);
 
         //取得被按按鈕上答案
         String answer = null;
@@ -159,10 +165,14 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     public void getHint(View v){
         //播放提示音效
         soundPool.play(hint, 1, 1, 0, 0, 1);
+
         //吐司訊息
-        Toast toast_hint = Toast.makeText(v.getContext(),question[1],Toast.LENGTH_LONG);
+        toast_hint = Toast.makeText(v.getContext(),question[1],Toast.LENGTH_SHORT);
         toast_hint.setGravity(Gravity.BOTTOM, 0, 300);
         toast_hint.show();
+
+        //提示按鈕不可按
+        btn_hint.setClickable(false);
     }
 
     //選單功能

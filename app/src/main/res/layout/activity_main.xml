@@ -27,7 +27,8 @@
         android:layout_marginTop="10dp"
         android:layout_alignLeft="@+id/btn_hint"
         android:layout_marginLeft="5dp"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="150dp"
@@ -40,7 +41,8 @@
         android:layout_marginStart="32dp"
         android:layout_alignTop="@+id/btn_op1"
         android:background="@drawable/menu_btn"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="150dp"
@@ -52,7 +54,8 @@
         android:layout_alignStart="@+id/btn_op1"
         android:layout_marginTop="5dp"
         android:background="@drawable/menu_btn"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="150dp"
@@ -64,7 +67,8 @@
         android:layout_marginTop="5dp"
         android:layout_below="@+id/btn_op2"
         android:background="@drawable/menu_btn"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="100dp"
@@ -79,7 +83,8 @@
         android:background="@drawable/menu_btn"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -88,13 +93,13 @@
         android:text="0"
         android:id="@+id/tv_score"
         android:layout_gravity="center"
-        android:layout_alignBottom="@+id/btn_hint"
         android:layout_centerHorizontal="true"
         android:textColor="#000080"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:textSize="30dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/tv_quiz"
@@ -108,12 +113,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="分數"
+        android:text="分"
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ffffff"
-        android:textSize="15dp" />
+        android:layout_alignParentTop="false"
+        android:textColor="#0000ff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="false"
+        android:layout_toRightOf="@+id/tv_score"
+        android:layout_alignBottom="@+id/tv_score" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -136,10 +143,10 @@
 
     <Button
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:id="@+id/btn_result"
         android:layout_centerHorizontal="true"
         android:visibility="invisible"
-        android:layout_marginTop="120dp" />
+        android:layout_marginTop="110dp" />
 
 </RelativeLayout>
