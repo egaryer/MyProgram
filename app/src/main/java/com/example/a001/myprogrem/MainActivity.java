@@ -34,7 +34,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     int[] quizbank = {R.array.quiz1, R.array.quiz2 ,R.array.quiz3,R.array.quiz4,R.array.quiz5,R.array.quiz6,R.array.quiz7,R.array.quiz8,R.array.quiz9,R.array.quiz10};
 
-    int[] imgBank = {R.drawable.quiz1, R.drawable.quiz2, R.drawable.quiz3,R.drawable.quiz4,R.drawable.quiz5,R.drawable.quiz6,R.drawable.quiz7,R.drawable.quiz8,R.drawable.quiz9,R.drawable.quiz10};
+    int[] imgBank = {R.drawable.quiz01, R.drawable.quiz02, R.drawable.quiz03,R.drawable.quiz04,R.drawable.quiz05,R.drawable.quiz06,R.drawable.quiz07,R.drawable.quiz08,R.drawable.quiz09,R.drawable.quiz10};
 
     int win, fail, hint;//音效碼
 

@@ -20,7 +20,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="45dp"
-        android:text="New Button"
+        android:text="1"
         android:id="@+id/btn_op1"
         android:background="@drawable/menu_btn"
         android:layout_below="@+id/img_pic"
@@ -33,7 +33,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="45dp"
-        android:text="New Button"
+        android:text="2"
         android:id="@+id/btn_op2"
         android:layout_toRightOf="@+id/btn_op1"
         android:layout_toEndOf="@+id/btn_op1"
@@ -47,12 +47,12 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="45dp"
-        android:text="New Button"
+        android:text="3"
         android:id="@+id/btn_op3"
         android:layout_below="@+id/btn_op1"
         android:layout_alignLeft="@+id/btn_op1"
         android:layout_alignStart="@+id/btn_op1"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/menu_btn"
         android:textColor="#000000"
         android:textSize="20dp" />
@@ -60,11 +60,11 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="45dp"
-        android:text="New Button"
+        android:text="4"
         android:id="@+id/btn_op4"
         android:layout_alignRight="@+id/btn_op2"
         android:layout_alignEnd="@+id/btn_op2"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/btn_op2"
         android:background="@drawable/menu_btn"
         android:textColor="#000000"
